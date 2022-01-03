@@ -37,13 +37,13 @@ class ViewController: UIViewController {
     }
     @IBAction func chooseIngredientStepper(_ sender: UIStepper) {
         let settext = Int(ingredientStepper.value)
-        //step顯現的數字是有小數點的，要先轉成整數Int
+        //change stepper to Int
         ingredientLabel.text = String(settext)
     }
     
     @IBAction func changeChopstikcsSlider(_ sender: UISlider) {
         let chopsticksnumber = Int(chopsticksSlider.value)
-        //slider顯現的數字是有小數點的，要先轉成整數Int
+        //change slider to Int
         chopsticksNumberLabel.text = String(chopsticksnumber) + " Pair"
     }
     
